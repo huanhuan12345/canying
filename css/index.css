@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#color{
+    background: #ffb03d;
+}
+header{
+    width:768px;
+    margin: 10px auto;
+}
+header div{
+    width: 176px;
+    height: 46px;
+    float: left;
+    background: #ff9701;
+}
+
+header ul{
+    margin-left: 32px;
+    float: left;
+}
+header ul >.nav{
+    float: left;
+    width: 80px;
+    height: 66px;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 66px;
+    font-size: 12px;
+ 
+}
+header ul li a{
+    color: #727272;
+}
+header ul .nav:hover{
+    background: #ff9701;
+    color: white;
+    font-weight: bold;
+}
+header ul .nav:hover a{
+    color: white;
+}
+header ul li ol{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+header ul li ol li{
+    background: #ff9701;
+    color: white;
+    height:40px;
+    width: 80px;
+    line-height: 40px;
+    border-top: 1px solid white;
+    opacity: 0.9;
+}
+.binfen:hover ol{
+    display: block;
+}
+.binfen ol li:hover{
+    background: #f56b00;
+}
+nav,article{
+    width: 100%;
+}
+nav{
+    background: #ffb03d;
+    height: 330px;
+    border-top: 3px solid #bdbdbd;
+}
+nav div{
+    position: relative;
+    width: 720px;
+    height: 300px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-top: 2px solid white;
+    background:white;
+    overflow: hidden;
+}
+nav div ul{
+    position: absolute;
+}
+nav div ul li{
+    width: 720px;
+    height: 300px;
+    display: inline-block;
+}
+nav div ul li:nth-child(1){
+    background: url(../images/1.jpg) no-repeat;
+    background-size:720px 300px;
+}
+nav div ul li:nth-child(2){
+    background: url(../images/2.jpg) no-repeat;
+    background-size:720px 300px;
+}
+nav div ul li:nth-child(3){
+    background: url(../images/3.jpg) no-repeat;
+    background-size:720px 300px;
+}
+nav div ul li:nth-child(4){
+    background: url(../images/4.jpg) no-repeat;
+    background-size:720px 300px;
+}
+nav div ul li:nth-child(5){
+    background: url(../images/1.jpg) no-repeat;
+    background-size:720px 300px;
+}
+.dot{
+    position: relative;
+    z-index: 0;
+    width: 55px;
+    margin: -35px auto;
+}
+.dot li{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor:pointer;
+}
+article{
+    background: #363636;
+    border-bottom: 5px solid #b4b4b4;
+}
+article h1{
+    color: white; 
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 16px;
+}
+article section{
+    width: 768px;
+    margin: 0 auto;
+    color: #a3a3a3;
+    font-size: 12px;
+    text-indent: 2em;
+    padding-bottom: 70px;
+}
+article h1 span{
+    color: #ff9600;
+}
+.banner {
+    width: 800px;
+    height: 245px;
+    margin: 0 auto; 
+    margin-top: -43px;
+}
+.banner >div{
+    float: left;
+    width: 190px;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+} 
+.banner div div{
+    float: none;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.banner div p{
+    width: 84px;
+    height: 84px;
+    float: left;
+    background: #808080;
+    border-radius: 50%;
+
+    box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.banner div p:nth-child(1){
+    transform-origin:100% 50%;
+    transition:all .35s ease-in-out;
+}
+.banner div p:nth-child(2){
+    background: #ff8e01;
+    opacity: 0;
+    position: absolute;
+    transform-origin:0% 50%;
+    transform:rotateY(90deg);
+    transition:all .35s ease-in-out .35s;
+}
+.banner div div:hover p:nth-child(1) {
+    transform:rotateY(90deg);
+    opacity: 0; 
+}
+.banner div div:hover p:nth-child(2){
+    transform:rotateY(0deg);
+    opacity: 1;
+}
+
+.banner h6, .banner span{
+    text-align: center;
+    color: #54504b;
+}
+.banner span{
+    font-size: 12px;
+    text-indent: 2em;
+    width: 180px;
+    height: 58px;
+}
+.main{
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.main >div{
+    display: inline-block;
+    padding: 5px;
+    border:1px solid #dfdcd5;
+    margin-right: 39px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 20px #888888;
+    overflow: hidden;
+}
+.main div:last-child,.main div:nth-child(4){
+    margin-right: 0;
+}
+.main img{
+    float: left;
+}
+.main div .div1{
+    background:rgba(0,0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 147px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    display: inline-block;
+    margin-left: -148px;
+    margin-top: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transform:scale(1.4,1) translateZ(50px) rotate(-44deg) rotateX(90deg);
+    transition:transform 1s;
+}
+.main >div:hover .div1{
+    transform:scale(1,1) translateZ(0px) rotate(0deg) rotateX(0deg);
+}
+.delfood{
+    width: 770px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.delfood ul li:nth-child(2){
+    margin: 0 90px;
+}
+.delfood ul li{
+    display: inline-block;
+    text-align: center;
+}
+.delfood p{
+    font-size: 12px;
+    color: #b8b8b8;
+}
+.delfood ul li h3{
+    display: inline-block;
+    color: #ff9701;
+}
+
+.delfood ul li >span{
+    display: inline-block;
+    color: #8c8984;
+    font-size: 12px;
+    width: 193px;
+}
+.delfood ul li h3~span{
+    font-weight: bold;
+    font-size: 19px;
+    color: 
+}
+footer div ul{
+    width: 768px;
+    margin: 0 auto;
+}
+
+footer div:nth-child(1){
+    background: #bbb7b7;
+    padding-top: 15px;
+}
+footer div h4{
+    color: #202020;
+    margin-bottom: 12px;
+}
+footer div ul li{
+    float: left;
+    margin-right: 20px;
+}
+footer div ul li p  img{
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+footer div ul li p a{
+    color:#818181;
+    font-size: 12px;
+}
+footer div ul li:last-child h4{
+    margin-left: 10px;
+}
+footer div ul li:last-child p{
+    float: left;
+    margin-left: 10px;
+}
+footer div ul li:last-child{
+    margin: 0;
+    margin-left: 5px;
+    width: 165px;
+}
+.finally{
+    background: #000;
+    color:#747373;
+}
+.finally div{
+    width: 768px;
+    margin: 0 auto;
+    padding: 2px 0;
+    font-size: 12px;
+}
+.finally div span{
+    float: right;
+}
